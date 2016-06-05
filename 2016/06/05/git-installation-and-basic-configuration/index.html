@@ -3,28 +3,33 @@
 <head>
     <meta charset="utf-8">
     
-    <title>explain the divisibility graph | Study of Human Knowledge</title>
+    <title>git installation and basic configuration | Study of Human Knowledge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="explain the divisibility graph
-introduction
-This is the topic of my summer research, so I want to explain the concept of divisibility graph to the reader of my blog.
-Divisibility graph is introduced b">
+    <meta name="description" content="Please note that git is far more powerful than this blog can cover.
+
+If you want to learn more about git,
+I find this video helpful to establish some good git habits:
+Advanced Git Topic.
+This video is">
 <meta property="og:type" content="article">
-<meta property="og:title" content="explain the divisibility graph">
-<meta property="og:url" content="chantisnake.github.io/2016/05/22/explain-the-divisibility-graph/index.html">
+<meta property="og:title" content="git installation and basic configuration">
+<meta property="og:url" content="chantisnake.github.io/2016/06/05/git-installation-and-basic-configuration/index.html">
 <meta property="og:site_name" content="Study of Human Knowledge">
-<meta property="og:description" content="explain the divisibility graph
-introduction
-This is the topic of my summer research, so I want to explain the concept of divisibility graph to the reader of my blog.
-Divisibility graph is introduced b">
-<meta property="og:image" content="chantisnake.github.io/images/divisibilty_graph/graph_7_base_10.png">
-<meta property="og:updated_time" content="2016-06-05T17:59:33.303Z">
+<meta property="og:description" content="Please note that git is far more powerful than this blog can cover.
+
+If you want to learn more about git,
+I find this video helpful to establish some good git habits:
+Advanced Git Topic.
+This video is">
+<meta property="og:updated_time" content="2016-06-05T19:08:13.766Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="explain the divisibility graph">
-<meta name="twitter:description" content="explain the divisibility graph
-introduction
-This is the topic of my summer research, so I want to explain the concept of divisibility graph to the reader of my blog.
-Divisibility graph is introduced b">
+<meta name="twitter:title" content="git installation and basic configuration">
+<meta name="twitter:description" content="Please note that git is far more powerful than this blog can cover.
+
+If you want to learn more about git,
+I find this video helpful to establish some good git habits:
+Advanced Git Topic.
+This video is">
     
 
     
@@ -156,7 +161,7 @@ Divisibility graph is introduced b">
 </aside>
 
             
-            <section id="main"><article id="post-explain-the-divisibility-graph" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-git-installation-and-basic-configuration" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -165,7 +170,7 @@ Divisibility graph is introduced b">
                 
     
         <h1 class="article-title" itemprop="name">
-            explain the divisibility graph
+            git installation and basic configuration
         </h1>
     
 
@@ -173,8 +178,8 @@ Divisibility graph is introduced b">
                     
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/05/22/explain-the-divisibility-graph/">
-            <time datetime="2016-05-22T23:06:57.000Z" itemprop="datePublished">2016-05-22</time>
+        <a href="/2016/06/05/git-installation-and-basic-configuration/">
+            <time datetime="2016-06-05T19:07:24.000Z" itemprop="datePublished">2016-06-05</time>
         </a>
     </div>
 
@@ -182,7 +187,7 @@ Divisibility graph is introduced b">
                     
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/mathematics/">mathematics</a>
+        <a class="article-category-link" href="/categories/computer/">computer</a>
     </div>
 
                     
@@ -197,54 +202,56 @@ Divisibility graph is introduced b">
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h1>explain the divisibility graph</h1>
-<h2>introduction</h2>
-<p>This is the topic of my summer research, so I want to explain the concept of divisibility graph to the reader of my blog.</p>
-<p>Divisibility graph is introduced by mathematician David Wilson on his blog post
-<a href="http://blog.tanyakhovanova.com/2009/08/divisibility-by-7-is-a-walk-on-a-graph-by-david-wilson/" target="_blank" rel="external">Divisibility by 7 is a Walk on a Graph, by David Wilson</a>.
-This explanation is not clear at all, later he put up another post,
-<a href="http://blog.tanyakhovanova.com/2010/08/divisibility-by-7-is-a-walk-on-a-graph-ii-2/" target="_blank" rel="external">Divisibility by 7 is a Walk on a Graph. II</a>.
-Well, this post did not explain how divisibility graph works, but this post does make the understanding of divisibility graph easier.</p>
-<p>Here is the divisibility graph of 7 with base 10:</p>
-<p><img src="/images/divisibilty_graph/graph_7_base_10.png" alt=""></p>
-<p>This can be used to calculate the result of $a \mod 7$, given $a$ is in base 10.</p>
-<p>In the next section <strong>the black arrow graph and white(red) arrow graph</strong> I will explain the graph property of this graph,
-and I will explain why it can give you the result of  $a \mod 7$, in the next next section <strong>how this graph works</strong></p>
-<h2>the black arrow graph and white(red) arrow graph</h2>
-<h3>black arrow graph</h3>
-<p>We can see this graph consists of two directed graph, one denoted as black arrows, and the other denoted as white arrows.</p>
-<p>Therefore we will call the graph with black arrows: black arrow graph.</p>
-<p>The black arrow graph of 7 with base 10 are like this:</p>
-<p><img src="/images/divisibilty_graph/black_arrow_graph_7_base_10.png" alt=""></p>
-<p>Which is not interesting at all, each arrow takes a number and increase it by 1 in mod 7 space.</p>
-<p>This is used to calculate the result of a number mod 7.
-I will explain there further in the next section: <strong>How this graph works</strong></p>
-<h3>white(red) arrow graph</h3>
-<p>I will some time refer to this graph as red arrow graph, because drawing a white arrow on white paper is… hard…</p>
-<p>The red arrow graph of 7 with base 10 are like this:</p>
-<p><img src="/images/divisibilty_graph/red_arrow_graph_7_base_10.png" alt=""></p>
-<p>This is a little more interesting than black arrow graph.
-Each arrow takes a number $a$ and goes to $(a \times Base) \mod 7$</p>
-<p>One easy conclusion we can reach from here is that every node has exactly one out degree, because modular is well defined.</p>
-<p>In fact, my research are mainly focused on the graph property of red arrow graphs. I will post more blog about this soon.</p>
-<h2>how do this graph work</h2>
-<p>Here is the description that the original blog gives:</p>
-<blockquote>
-<p>Write down a number n. Start at the small white node at the bottom of the graph. For each digit d in n, follow d black arrows in a succession, and as you move from one digit to the next, follow 1 white arrow.</p>
-<p>For example, if n = 325, follow 3 black arrows, then 1 white arrow, then 2 black arrows, then 1 white arrow, and finally 5 black arrows.</p>
-<p>If you end up back at the white node, n is divisible by 7.</p>
-</blockquote>
-<p>Then why do this works?</p>
-<p>Recall that how black arrow graph and white arrow graph is defined:</p>
-<ul>
-<li>
-<p>black arrow graph: takes a number and increment this number by 1 in mod 7 space.
-Basically given $a$ and the arrow outputs $a + 1 mod 7$.</p>
-</li>
-<li>
-<p>red arrow graph: takes a number and multiply it by</p>
-</li>
+            <ul>
+<li>Please note that git is far more powerful than this blog can cover.</li>
 </ul>
+<p>If you want to learn more about git,
+I find this video helpful to establish some good git habits:
+<a href="https://channel9.msdn.com/events/MVP-RD-Americas/GitHub--Microsoft-Partnership/GH3-AdvancedGit-commits-stash-stagingarea" target="_blank" rel="external">Advanced Git Topic</a>.
+This video is created by one of the employer of GitHub and bunch of Microsoft MVP’s.</p>
+<p>Let’s get started with some basic.</p>
+<h2>installing git</h2>
+<h3>ubuntu (debian)</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure>
+<h3>mac</h3>
+<p>I think mac has git built in…
+if not, I am pretty sure you can use <a href="http://brew.sh/" target="_blank" rel="external">homebrew</a>:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
+<h3>windows</h3>
+<p><a href="chocolatey.org">chocolety</a> is the way I will recommend it.
+Run powershell in admin, then do this:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco install git</span><br></pre></td></tr></table></figure>
+<p>Posh-git is extremely helpful on windows, install it using:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco install poshgit</span><br></pre></td></tr></table></figure>
+<h2>setting up ssh key</h2>
+<p>If you are using <a href="https://desktop.github.com/" target="_blank" rel="external">GitHub Desktop</a> on windows or mac, you can skip this.</p>
+<p>I personally prefer to use the command line, because this is universal, and provides great scripting scripting ability right inside your shell.</p>
+<h3>mac and linux</h3>
+<p>ssh-key setup on mac or linux is pretty easy, follow the instruction here: <a href="https://help.github.com/articles/generating-an-ssh-key/" target="_blank" rel="external">generate ssh key</a></p>
+<p>All you need to do is:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># generate ssh key</span></span><br><span class="line">$ ssh-keygen -t rsa -b <span class="number">4096</span> -C <span class="string">"your_email@example.com"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># turn on ssh-agent</span></span><br><span class="line">$ <span class="built_in">eval</span> <span class="string">"<span class="variable">$(ssh-agent -s)</span>"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># add ssh-key</span></span><br><span class="line">$ ssh-add ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># linux copy public key to clip board</span></span><br><span class="line">$ sudo apt-get install xclip</span><br><span class="line">$ xclip -sel clip &lt; ~/.ssh/id_rsa.pub</span><br><span class="line"></span><br><span class="line"><span class="comment"># mac copy public key to clip board</span></span><br><span class="line">$ pbcopy &lt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>Don’t forget to change <code>&quot;your_email@example.com&quot;</code> on the second line to your registered email of GitHub</p>
+<p>now all you need to do is to add your ssh-key to paste your ssh to your GitHub, see this tutorial: <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" target="_blank" rel="external">Adding a new SSH key to your GitHub account</a></p>
+<h3>windows</h3>
+<p>adding a ssh-key to windows is a little trickier, luckily people realize that…</p>
+<p>Here is a basic tutorial on git for windows and git integration on visual studio if you are interested: <a href="https://channel9.msdn.com/Series/Using-Git-with-Visual-Studio-2013" target="_blank" rel="external">Git Basics</a></p>
+<p>There are two ways:</p>
+<h4>use a script.</h4>
+<p>If you uses chocolatey to installed git, you can automate your ssh-keygen using this powershell script:</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># get current location</span></span><br><span class="line"><span class="variable">$location</span> = <span class="built_in">Get-Location</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># go to git location</span></span><br><span class="line"><span class="built_in">Set-Location</span> <span class="string">'C:\Program Files\Git\usr\bin'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># genrate and add ssh key</span></span><br><span class="line"><span class="built_in">Invoke-Expression</span> <span class="string">'./ssh-keygen.exe -t rsa -b 4096 -C "your_email@example.com"'</span></span><br><span class="line"><span class="built_in">Invoke-Expression</span> <span class="string">'./ssh-agent -s'</span></span><br><span class="line"><span class="built_in">Invoke-Expression</span> <span class="string">"./ssh-add.exe <span class="variable">$HOME</span>/.ssh/id_rsa"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># copy ssh key to clip board</span></span><br><span class="line">cat <span class="string">"<span class="variable">$HOME</span>\.ssh\id_rsa.pub"</span> |clip</span><br><span class="line"></span><br><span class="line"><span class="comment"># go back to the original location</span></span><br><span class="line"><span class="built_in">Set-Location</span> <span class="variable">$location</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># log</span></span><br><span class="line"><span class="built_in">Write-Host</span> <span class="string">'your ssh agent is setted up and your ssh key is copied to clip board'</span></span><br><span class="line"><span class="built_in">Read-Host</span> <span class="string">'press enter to continue'</span></span><br></pre></td></tr></table></figure>
+<p>Remember to change <code>&quot;your_email@example.com&quot;</code> on the first line of <code>genrate and add ssh key</code> to your registered email on GitHub.</p>
+<p>Now all you need to do is to add your ssh-key to paste your ssh to your GitHub, see this tutorial: <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" target="_blank" rel="external">Adding a new SSH key to your GitHub account</a></p>
+<p>This script is part of my windows setup script: <a href="https://github.com/chantisnake/WindowsEssencial" target="_blank" rel="external">windows essential</a></p>
+<h4>using <code>Git-Credential-Manager-for-Windows</code></h4>
+<p>I have never used this before.</p>
+<p>Install it using:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco install git-credential-manager-for-windows</span><br></pre></td></tr></table></figure>
+<p>here is the document and the repo <a href="https://github.com/Microsoft/Git-Credential-Manager-for-Windows" target="_blank" rel="external">Git Credential Manager for Windows</a></p>
+<p>This seems like awesome…</p>
+<blockquote>
+<h3>How to use</h3>
+<p>You don’t. It magically works when credentials are needed. For example, when pushing to Visual Studio Team Services, it automatically opens a window and initializes an oauth2 flow to get your token.</p>
+</blockquote>
 
         
         </div>
@@ -255,7 +262,7 @@ Basically given $a$ and the arrow outputs $a + 1 mod 7$.</p>
 
 </div>
 
-    <a data-url="chantisnake.github.io/2016/05/22/explain-the-divisibility-graph/" data-id="cip2ypmuz0000ucvc0to0g0gi" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="chantisnake.github.io/2016/06/05/git-installation-and-basic-configuration/" data-id="cip2ypmvu000gucvcdv168bph" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -323,7 +330,7 @@ Basically given $a$ and the arrow outputs $a + 1 mod 7$.</p>
 
             
     
-        <a href="chantisnake.github.io/2016/05/22/explain-the-divisibility-graph/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="chantisnake.github.io/2016/05/22/explain-the-divisibility-graph/">Comments</a>
+        <a href="chantisnake.github.io/2016/06/05/git-installation-and-basic-configuration/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="chantisnake.github.io/2016/06/05/git-installation-and-basic-configuration/">Comments</a>
     
 
         </footer>
@@ -332,19 +339,10 @@ Basically given $a$ and the arrow outputs $a + 1 mod 7$.</p>
         
 <nav id="article-nav">
     
-        <a href="/2016/06/05/git-installation-and-basic-configuration/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Newer</strong>
-            <div class="article-nav-title">
-                
-                    git installation and basic configuration
-                
-            </div>
-        </a>
     
-    
-        <a href="/2016/02/17/new-blog/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2016/05/22/explain-the-divisibility-graph/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">Older</strong>
-            <div class="article-nav-title">new blog</div>
+            <div class="article-nav-title">explain the divisibility graph</div>
         </a>
     
 </nav>
@@ -522,7 +520,7 @@ Basically given $a$ and the arrow outputs $a + 1 mod 7$.</p>
     var disqus_shortname = 'chantisnakegithubio';
     
     
-    var disqus_url = 'chantisnake.github.io/2016/05/22/explain-the-divisibility-graph/';
+    var disqus_url = 'chantisnake.github.io/2016/06/05/git-installation-and-basic-configuration/';
     
     (function() {
     var dsq = document.createElement('script');
