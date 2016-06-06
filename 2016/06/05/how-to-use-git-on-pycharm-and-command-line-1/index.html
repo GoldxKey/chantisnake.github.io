@@ -3,17 +3,25 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Archive: 2016 | Study of Human Knowledge</title>
+    <title>how to use git on both pycharm and command line (1) | Study of Human Knowledge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Study of Human Knowledge">
-<meta property="og:url" content="chantisnake.github.io/archives/2016/index.html">
+    <meta name="description" content="This section we will introduce couple of commonly used git command and how to use them both in command line and pycharm
+
+all the following demo is using gvim, pycharm on windows 10 and powershell 5 wi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="how to use git on both pycharm and command line (1)">
+<meta property="og:url" content="chantisnake.github.io/2016/06/05/how-to-use-git-on-pycharm-and-command-line-1/index.html">
 <meta property="og:site_name" content="Study of Human Knowledge">
-<meta property="og:description">
+<meta property="og:description" content="This section we will introduce couple of commonly used git command and how to use them both in command line and pycharm
+
+all the following demo is using gvim, pycharm on windows 10 and powershell 5 wi">
+<meta property="og:image" content="chantisnake.github.io/images/git_basic/git_status.PNG">
+<meta property="og:updated_time" content="2016-06-06T01:36:56.395Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Study of Human Knowledge">
-<meta name="twitter:description">
+<meta name="twitter:title" content="how to use git on both pycharm and command line (1)">
+<meta name="twitter:description" content="This section we will introduce couple of commonly used git command and how to use them both in command line and pycharm
+
+all the following demo is using gvim, pycharm on windows 10 and powershell 5 wi">
     
 
     
@@ -145,35 +153,21 @@
 </aside>
 
             
-            <section id="main">
-                <div class="archive-year-wrap">
-                    <a href="/archives/2016" class="archive-year">2016</a>
-                </div>
-                <section class="archives-wrap">
-                    <div class="archives">
-            
-            <article class="archive-article archive-type-summary">
+            <section id="main"><article id="post-how-to-use-git-on-pycharm-and-command-line-1" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
     
-    <div class="archive-article-thumbnail">
-        <a href="/2016/06/05/how-to-use-git-on-pycharm-and-command-line-1/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/git_basic/git_status.PNG)" alt="how to use git on both pycharm and command line (1)" class="thumbnail-image"></span>
-    
-</a>
-    </div>
-    
-    <div class="archive-article-content">
-        <header class="archive-article-header">
-            
-    
-        <h1 itemprop="name">
-            <a class="archive-article-title" href="/2016/06/05/how-to-use-git-on-pycharm-and-command-line-1/">how to use git on both pycharm and command line (1)</a>
+        <h1 class="article-title" itemprop="name">
+            how to use git on both pycharm and command line (1)
         </h1>
     
 
-            <div class="article-meta">
-                
+                <div class="article-meta">
+                    
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2016/06/05/how-to-use-git-on-pycharm-and-command-line-1/">
@@ -182,326 +176,189 @@
     </div>
 
 
-                
+                    
     <div class="article-category">
     	<i class="fa fa-folder"></i>
         <a class="article-category-link" href="/categories/computer/">computer</a>
     </div>
 
-                
+                    
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/tags/English-Blog/">English Blog</a>
     </div>
 
-            </div>
-        </header>
-        <div class="article-entry">
-            <p>This section we will introduce couple of commonly used git command and how to use them both in command line and pycharm
-
-all the following demo is using gvim, pycharm on windows 10 and powershell 5 wi</p>
-            <p class="article-more-link">
-                <a href="/2016/06/05/how-to-use-git-on-pycharm-and-command-line-1/#more">Read More</a>
-            </p>
-        </div>
-    </div>
-</article>
+                </div>
+            </header>
         
-            <article class="archive-article archive-type-summary">
-    
-    <div class="archive-article-thumbnail">
-        <a href="/2016/06/05/a-introduction-to-basic-git-concepts/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/./images/git_concepts/dot_git_folder.PNG)" alt="a introduction to basic git concepts" class="thumbnail-image"></span>
-    
-</a>
-    </div>
-    
-    <div class="archive-article-content">
-        <header class="archive-article-header">
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>This section we will introduce couple of commonly used git command and how to use them both in command line and pycharm</p>
+<ul>
+<li><strong>all the following demo is using gvim, pycharm on windows 10 and powershell 5 with ConEmu</strong></li>
+</ul>
+<h2>git add</h2>
+<h3>command line</h3>
+<p>this command adds changes in to your git info, and waiting to be committed.</p>
+<p><code>git add .</code> and <code>git add -A</code> will automatically adds all the file that is changed from the last commit.</p>
+<p>Examples:</p>
+<p><img src="/images/git_basic/git_status.PNG" alt=""></p>
+<p>we will explain git status later.</p>
+<p>You can see that I have two changes, notice those changes is to compare with the last commit <strong>on your local</strong>:</p>
+<ul>
+<li>modified the file <code>New_File</code> (I added two line at the end)</li>
+<li>deleted <code>toy.md</code></li>
+<li>and added a <code>.toy.md.swp</code></li>
+</ul>
+<p>So if I do <code>git add .</code>:</p>
+<p><img src="/images/git_basic/git_add_dot.PNG" alt=""></p>
+<p>All the change is added and ready to be committed (see that on the top <code>Changes to be committed</code>)</p>
+<p>if I do <code>git add -A</code> this will have the exact same effect:</p>
+<p><img src="/images/git_basic/git_add_minusA.PNG" alt=""></p>
+<ul>
+<li>notice there is a indication on the top that looks like <code>[master +1 ~1 -1 ~]</code>.
+That is <code>posh-git</code> on powershell.
+<code>+1</code> means there is one addition(<code>.toy.md.swp</code>);
+<code>~1</code> means there is one modification (<code>New_File</code>);
+<code>-1</code> means there is one deletion (<code>toy.md</code>).
+This is really handy</li>
+</ul>
+<p>If I think that the addition of <code>.toy.md.swp</code> is a mistake, I don’t want it to be pushed to the remote.
+Or I just haven’t finish all the things I am working on in <code>.toy.md.swp</code>,
+then we can just add <code>New_File</code> and <code>toy.md</code></p>
+<p>I can just do <code>git add New_File toy.md</code></p>
+<p><img src="/images/git_basic/git_add_selected.PNG" alt=""></p>
+<ul>
+<li>notice <code>posh-git</code> left the <code>+1</code> orange, which means the addition of <code>.toy.md.swp</code> is not added.
+On the other hand, the blue <code>~1</code> and <code>-1</code> means the modification and deletion is added.</li>
+</ul>
+<h3>pycharm</h3>
+<p>If you create a file on pycharm in a git directory,
+pycharm will automatically prompt you for whether to add this file.</p>
+<p>I will create a new file call test:</p>
+<p><img src="/images/git_basic/pycharm_new_file.PNG" alt=""></p>
+<p>pycharm will ask me once the file is created:</p>
+<p><img src="/images/git_basic/pycharm_git_add_promp.PNG" alt=""></p>
+<p>So if there is some file I did not add in pycharm or I forget to check <code>yes</code> when I created this file,
+I can always right click on the file and go to <code>git -&gt; add</code></p>
+<p><img src="/images/git_basic/pycharm_git_add_manual.PNG" alt=""></p>
+<p>After adding notice that the file name turns green:</p>
+<p><img src="/images/git_basic/pycharm_git_add_after.PNG" alt=""></p>
+<p>Green file name indicates new file, and blue file name means changed files.</p>
+<h2>git commit</h2>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="chantisnake.github.io/2016/06/05/how-to-use-git-on-pycharm-and-command-line-1/" data-id="cip3f7j5e000flcvcrthnijdf" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
             
     
-        <h1 itemprop="name">
-            <a class="archive-article-title" href="/2016/06/05/a-introduction-to-basic-git-concepts/">a introduction to basic git concepts</a>
-        </h1>
+        <a href="chantisnake.github.io/2016/06/05/how-to-use-git-on-pycharm-and-command-line-1/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="chantisnake.github.io/2016/06/05/how-to-use-git-on-pycharm-and-command-line-1/">Comments</a>
     
 
-            <div class="article-meta">
-                
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/06/05/a-introduction-to-basic-git-concepts/">
-            <time datetime="2016-06-05T19:34:25.000Z" itemprop="datePublished">2016-06-05</time>
-        </a>
+        </footer>
     </div>
-
-
-                
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/computer/">computer</a>
-    </div>
-
-                
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/English-Blog/">English Blog</a>
-    </div>
-
-            </div>
-        </header>
-        <div class="article-entry">
-            <p>
-Please note that git is far more powerful than this blog can cover.
-
-If you want to learn more about git,
-I find this video helpful to establish some good git habits:
-Advanced Git Topic.
-This video i</p>
-            <p class="article-more-link">
-                <a href="/2016/06/05/a-introduction-to-basic-git-concepts/#more">Read More</a>
-            </p>
-        </div>
-    </div>
-</article>
+    
         
-            <article class="archive-article archive-type-summary">
-    
-    <div class="archive-article-thumbnail">
-        <a href="/2016/06/05/git-installation-and-basic-configuration/" class="thumbnail">
+<nav id="article-nav">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-    </div>
-    
-    <div class="archive-article-content">
-        <header class="archive-article-header">
-            
-    
-        <h1 itemprop="name">
-            <a class="archive-article-title" href="/2016/06/05/git-installation-and-basic-configuration/">git installation and basic configuration</a>
-        </h1>
-    
-
-            <div class="article-meta">
-                
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/06/05/git-installation-and-basic-configuration/">
-            <time datetime="2016-06-05T19:07:24.000Z" itemprop="datePublished">2016-06-05</time>
+        <a href="/2016/06/05/a-introduction-to-basic-git-concepts/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">a introduction to basic git concepts</div>
         </a>
-    </div>
+    
+</nav>
 
 
-                
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/computer/">computer</a>
-    </div>
-
-                
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/English-Blog/">English Blog</a>
-    </div>
-
-            </div>
-        </header>
-        <div class="article-entry">
-            <p>
-Please note that git is far more powerful than this blog can cover.
-
-If you want to learn more about git,
-I find this video helpful to establish some good git habits:
-Advanced Git Topic.
-This video i</p>
-            <p class="article-more-link">
-                <a href="/2016/06/05/git-installation-and-basic-configuration/#more">Read More</a>
-            </p>
-        </div>
-    </div>
+    
 </article>
+
+
+    
+    <section id="comments">
+    
         
-            <article class="archive-article archive-type-summary">
-    
-    <div class="archive-article-thumbnail">
-        <a href="/2016/05/22/explain-the-divisibility-graph/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/divisibilty_graph/graph_7_base_10.png)" alt="explain the divisibility graph" class="thumbnail-image"></span>
-    
-</a>
-    </div>
-    
-    <div class="archive-article-content">
-        <header class="archive-article-header">
-            
-    
-        <h1 itemprop="name">
-            <a class="archive-article-title" href="/2016/05/22/explain-the-divisibility-graph/">explain the divisibility graph</a>
-        </h1>
-    
-
-            <div class="article-meta">
-                
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/05/22/explain-the-divisibility-graph/">
-            <time datetime="2016-05-22T23:06:57.000Z" itemprop="datePublished">2016-05-22</time>
-        </a>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 
-
-                
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/mathematics/">mathematics</a>
-    </div>
-
-                
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/English-Blog/">English Blog</a>
-    </div>
-
-            </div>
-        </header>
-        <div class="article-entry">
-            <p>explain the divisibility graph
-introduction
-This is the topic of my summer research, so I want to explain the concept of divisibility graph to the reader of my blog.
-Divisibility graph is introduced b</p>
-            <p class="article-more-link">
-                <a href="/2016/05/22/explain-the-divisibility-graph/#more">Read More</a>
-            </p>
-        </div>
-    </div>
-</article>
-        
-            <article class="archive-article archive-type-summary">
     
-    <div class="archive-article-thumbnail">
-        <a href="/2016/02/17/new-blog/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-    </div>
-    
-    <div class="archive-article-content">
-        <header class="archive-article-header">
-            
-    
-        <h1 itemprop="name">
-            <a class="archive-article-title" href="/2016/02/17/new-blog/">new blog</a>
-        </h1>
-    
-
-            <div class="article-meta">
-                
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/02/17/new-blog/">
-            <time datetime="2016-02-17T23:14:31.000Z" itemprop="datePublished">2016-02-17</time>
-        </a>
-    </div>
-
-
-                
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/just-saying/">just saying</a>
-    </div>
-
-                
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/English-Blog/">English Blog</a>
-    </div>
-
-            </div>
-        </header>
-        <div class="article-entry">
-            <p>This is the new blog that I am current using.
-This blog will continue be focusing on the same content as my old blogs:
-mainly about computer science, and technology.
-also there will be some math invol</p>
-            <p class="article-more-link">
-                <a href="/2016/02/17/new-blog/#more">Read More</a>
-            </p>
-        </div>
-    </div>
-</article>
-        
-            <article class="archive-article archive-type-summary">
-    
-    <div class="archive-article-thumbnail">
-        <a href="/2016/02/16/test/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-    </div>
-    
-    <div class="archive-article-content">
-        <header class="archive-article-header">
-            
-    
-        <h1 itemprop="name">
-            <a class="archive-article-title" href="/2016/02/16/test/">test</a>
-        </h1>
-    
-
-            <div class="article-meta">
-                
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/02/16/test/">
-            <time datetime="2016-02-17T02:24:49.000Z" itemprop="datePublished">2016-02-16</time>
-        </a>
-    </div>
-
-
-                
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/computer/">computer</a>
-    </div>
-
-                
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/English-Blog/">English Blog</a>
-    </div>
-
-            </div>
-        </header>
-        <div class="article-entry">
-            <p>testing file
- this is text is bookmark1(used for bookmark test) 
-math test
-block math test
-$$\dfrac{\cos(a) - \Delta p}{\alpha}$$
-$$\begin{bmatrix}
-1 &amp; 0\\
-0 &amp; 1
-\end{bmatrix}$$
-
-you have to e</p>
-            <p class="article-more-link">
-                <a href="/2016/02/16/test/#more">Read More</a>
-            </p>
-        </div>
-    </div>
-</article>
-        
-        </div></section>
     </section>
+
+</section>
             
                 <aside id="sidebar">
     
@@ -676,11 +533,13 @@ you have to e</p>
     var disqus_shortname = 'chantisnakegithubio';
     
     
+    var disqus_url = 'chantisnake.github.io/2016/06/05/how-to-use-git-on-pycharm-and-command-line-1/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
