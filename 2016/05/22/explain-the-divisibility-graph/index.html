@@ -18,7 +18,7 @@ introduction
 This is the topic of my summer research, so I want to explain the concept of divisibility graph to the reader of my blog.
 Divisibility graph is introduced b">
 <meta property="og:image" content="chantisnake.github.io/images/divisibilty_graph/graph_7_base_10.png">
-<meta property="og:updated_time" content="2016-06-05T17:59:33.303Z">
+<meta property="og:updated_time" content="2016-09-16T02:53:25.439Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="explain the divisibility graph">
 <meta name="twitter:description" content="explain the divisibility graph
@@ -127,12 +127,12 @@ Divisibility graph is introduced b">
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                6
+                7
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                1
-                <span>tag</span>
+                7
+                <span>tags</span>
             </div>
         </div>
         
@@ -188,7 +188,7 @@ Divisibility graph is introduced b">
                     
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/English-Blog/">English Blog</a>
+        <a class="tag-link" href="/tags/divisibility-graph/">divisibility graph</a>, <a class="tag-link" href="/tags/graph-theory/">graph theory</a>
     </div>
 
                 </div>
@@ -239,12 +239,30 @@ Each arrow takes a number $a$ and goes to $(a \times Base) \mod 7$</p>
 <ul>
 <li>
 <p>black arrow graph: takes a number and increment this number by 1 in mod 7 space.
-Basically given $a$ and the arrow outputs $a + 1 mod 7$.</p>
+Basically given $a$ and the arrow outputs $a + 1 \mod 7$.</p>
 </li>
 <li>
-<p>red arrow graph: takes a number and multiply it by</p>
+<p>red arrow graph: takes a number and multiply it by the base (this is 10 in previous examples), and then mod by 7, therefore goes to $a \cdot 10 \mod 7$</p>
 </li>
 </ul>
+<p>Let’s take an example: 352. Obviously we can decompose the number into $(3 \cdot 10+5) \cdot 10+2$.</p>
+<p>First we follow the black arrow graph for 3 times (because the first digit in 352 is 3),
+then we get to 3, easy to notice this is the result of $3 \mod 7$</p>
+<p>Then, we change a number, therefore follow the white arrow once.
+We get the result of $(3 \mod 7) \cdot 10 \mod 7$.
+Notice what we got is actually $3 \cdot 10 \mod 7$, this is pretty easy to prove if you use $(b \mod a) \mod a \equiv b \mod a$</p>
+<p>From this point, we continue to move 5 times follow the black arrow.
+Therefore we are actually adding 5 and mod 7.
+We get the result of $(3 \cdot 10 + 5) \mod 7$.</p>
+<p>Did you notice some connections?
+We are actually breaking up 352 into  $(3 \cdot 10+5) \cdot 10+2$. Then calculate.</p>
+<p>Then move from number 5 to number 2 we follow white arrow graph and get the result of
+$(3 \cdot 10+5) \cdot 10 \mod 7$</p>
+<p>Finally we follow black arrow 2 times (last digit 2 in 352).
+we get $(3 \cdot 10+5) \cdot 10 + 2 \mod 7$</p>
+<p>From this point on we have fully understand why divisibility graph works,
+and we can then create any divisibility graph for any number in any base.</p>
+<p>My research starts from this point. I will give more theorem on this later.</p>
 
         
         </div>
@@ -255,7 +273,7 @@ Basically given $a$ and the arrow outputs $a + 1 mod 7$.</p>
 
 </div>
 
-    <a data-url="chantisnake.github.io/2016/05/22/explain-the-divisibility-graph/" data-id="cip4lkdo8000li4vceunfc65b" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="chantisnake.github.io/2016/05/22/explain-the-divisibility-graph/" data-id="cit56b5eg000u0kvc7pnyxof8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -378,6 +396,24 @@ Basically given $a$ and the arrow outputs $a + 1 mod 7$.</p>
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2016/06/12/how-to-bypass-Wheaton-College-MA-network-restriction-for-windows/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/bypass_wheaton/user-agent.PNG)" alt="how to bypass Wheaton College(MA) network restriction for windows" class="thumbnail-image"></span>
+    
+</a>
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/computer/">computer</a></p>
+                            <p class="item-title"><a href="/2016/06/12/how-to-bypass-Wheaton-College-MA-network-restriction-for-windows/" class="title">how to bypass Wheaton College(MA) network restriction for windows</a></p>
+                            <p class="item-date"><time datetime="2016-06-12T15:47:12.000Z" itemprop="datePublished">2016-06-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2016/06/05/how-to-use-git-on-pycharm-and-command-line-1/" class="thumbnail">
     
     
@@ -447,24 +483,6 @@ Basically given $a$ and the arrow outputs $a + 1 mod 7$.</p>
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2016/02/17/new-blog/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/just-saying/">just saying</a></p>
-                            <p class="item-title"><a href="/2016/02/17/new-blog/" class="title">new blog</a></p>
-                            <p class="item-date"><time datetime="2016-02-17T23:14:31.000Z" itemprop="datePublished">2016-02-17</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -474,7 +492,7 @@ Basically given $a$ and the arrow outputs $a + 1 mod 7$.</p>
     <div class="widget-wrap">
         <h3 class="widget-title">categories</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/computer/">computer</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/just-saying/">just saying</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mathematics/">mathematics</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/computer/">computer</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/just-saying/">just saying</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mathematics/">mathematics</a><span class="category-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -483,7 +501,7 @@ Basically given $a$ and the arrow outputs $a + 1 mod 7$.</p>
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">2</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -492,7 +510,7 @@ Basically given $a$ and the arrow outputs $a + 1 mod 7$.</p>
     <div class="widget-wrap">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-Blog/">English Blog</a><span class="tag-list-count">6</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Microsoft-Edge/">Microsoft Edge</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/divisibility-graph/">divisibility graph</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graph-theory/">graph theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/powershell/">powershell</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pycharm/">pycharm</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -501,7 +519,7 @@ Basically given $a$ and the arrow outputs $a + 1 mod 7$.</p>
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/English-Blog/" style="font-size: 10px;">English Blog</a>
+            <a href="/tags/Microsoft-Edge/" style="font-size: 10px;">Microsoft Edge</a> <a href="/tags/divisibility-graph/" style="font-size: 10px;">divisibility graph</a> <a href="/tags/git/" style="font-size: 20px;">git</a> <a href="/tags/graph-theory/" style="font-size: 10px;">graph theory</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/powershell/" style="font-size: 15px;">powershell</a> <a href="/tags/pycharm/" style="font-size: 10px;">pycharm</a>
         </div>
     </div>
 
